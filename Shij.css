@@ -1,0 +1,31 @@
+body {
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+    color: white
+}
+
+h2{
+    margin-bottom: 2rem;
+}
+
+h4{
+    margin-bottom: 2rem;
+}
+
+.img300{
+    max-width:300px;
+    margin-bottom: 4rem;
+}
+
+.img200{
+    width:200px;
+    margin-bottom: 4rem;
+    height: 200px;
+}
+
+.logo{
+    max-width:100px;
+}
