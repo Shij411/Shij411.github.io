@@ -7,9 +7,15 @@ body {
     color: white
 }
 
+h1{
+    color: #F9EBFF;
+}
+
 h2{
     margin-bottom: 2rem;
+    color: #F9EBFF;
 }
+
 
 h4{
     margin-bottom: 2rem;
@@ -75,4 +81,11 @@ h4{
   cursor: pointer;
   filter: invert(1) brightness(30%);
   transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 576px) {
+    .img200 {
+        width:140px;
+        height: 140px;
+    }
 }
