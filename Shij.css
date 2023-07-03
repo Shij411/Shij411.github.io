@@ -88,4 +88,51 @@ h4{
         width:140px;
         height: 140px;
     }
+
+    #image-gallery{
+      width: 90vw;
+      margin: 0 auto;
+    }
+
+    #current-image{
+        max-width: 90vw;
+        max-height: 243px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #image-thumbs{
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .thumb{
+      width: 10vw;
+      height: 80px;
+      object-fit: cover;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .arrow{
+      width: 15vw;
+      height: 80px;
+      object-fit: cover;
+      margin-right: 10px;
+      cursor: pointer;
+      filter: invert(1) brightness(30%);
+      color: grey;
+    }
+
+    .rightArrow{
+      width: 15vw;
+      height: 80px;
+      object-fit: cover;
+      margin-right: 10px;
+      cursor: pointer;
+      filter: invert(1) brightness(30%);
+      transform: rotate(180deg);
+    }
 }

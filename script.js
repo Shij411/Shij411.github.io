@@ -5,6 +5,11 @@ var imageThumbs = document.getElementById("image-thumbs");
 var maxIndex = 22
 var jump = 5
 var index = maxIndex;
+var w = window.innerWidth;
+var amount = 9;
+if (w < 576){
+    amount = 4;
+};
 
 function showPics(index) {
 
@@ -34,7 +39,7 @@ function showPics(index) {
 
 
     // add images
-    for (var i = index; i >= index - 9; i--) {
+    for (var i = index; i >= index - amount; i--) {
         var thumb = document.createElement("img");
         thumb.src = "gallery/image" + i + ".jpg";
         thumb.alt = "Image " + i;
@@ -55,11 +60,11 @@ function showPics(index) {
     arrow.alt = "load next 10 images";
     arrow.classList.add("rightArrow");
     imageThumbs.appendChild(arrow);
-    if (index > 10) {
+    if (index > amount+1) {
         arrow.addEventListener(
           "click", function() {
-             if (index - jump < 10) {
-                showPics(10)
+             if (index - jump < amount+1) {
+                showPics(amount+1)
              } else {
                 showPics(index - jump);
              }
