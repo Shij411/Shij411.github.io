@@ -7,6 +7,10 @@ body {
     color: white
 }
 
+.mb-lg-4{
+  display: flex;
+}
+
 h1{
     color: #F9EBFF;
 }
@@ -19,6 +23,12 @@ h2{
 
 h4{
     margin-bottom: 2rem;
+}
+
+.art{
+  max-height: 600px;
+  max-width: 600px;
+  margin: auto;
 }
 
 .img300{
@@ -134,5 +144,12 @@ h4{
       cursor: pointer;
       filter: invert(1) brightness(30%);
       transform: rotate(180deg);
+    }
+
+    .art{
+      padding-top: 1em;
+      max-height: 90vw;
+      max-width: 90vw;
+      margin: auto;
     }
 }
