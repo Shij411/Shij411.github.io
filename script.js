@@ -2,7 +2,7 @@ var currentImage = document.getElementById("current-image");
 
 var imageThumbs = document.getElementById("image-thumbs");
 
-var maxIndex = 33
+var maxIndex = 40
 var jump = 5
 var index = maxIndex;
 var w = window.innerWidth;
@@ -41,7 +41,7 @@ function showPics(index) {
     // add images
     for (var i = index; i >= index - amount; i--) {
         var thumb = document.createElement("img");
-        thumb.src = "gallery/image" + i + ".webp";
+        thumb.src = "gallery/images/image" + i + ".webp";
         thumb.alt = "Image " + i;
         thumb.classList.add("thumb");
         imageThumbs.appendChild(thumb);
