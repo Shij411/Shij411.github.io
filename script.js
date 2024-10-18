@@ -2,7 +2,7 @@ var currentImage = document.getElementById("current-image");
 
 var imageThumbs = document.getElementById("image-thumbs");
 
-var maxIndex = 42
+var maxIndex = 45
 var jump = 5
 var index = maxIndex;
 var w = window.innerWidth;
